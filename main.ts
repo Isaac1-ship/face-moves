@@ -1,4 +1,4 @@
-controller.A.onEvent(ControllerButtonEvent.Repeated, function () {
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     mySprite = sprites.create(assets.image`stick man`, SpriteKind.Player)
     animation.runImageAnimation(
     mySprite,
@@ -10,8 +10,8 @@ controller.A.onEvent(ControllerButtonEvent.Repeated, function () {
 let mySprite: Sprite = null
 let mySprite2 = sprites.create(assets.image`stick man`, SpriteKind.Player)
 animation.runImageAnimation(
-mySprite,
-assets.animation`myAnim`,
+mySprite2,
+assets.animation`walking`,
 200,
 true
 )
